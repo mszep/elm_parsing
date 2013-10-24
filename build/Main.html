@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Main
+        </title>
+        <script type="text/javascript" src="/elm-runtime.js">
+            
+        </script>
+        <script type="text/javascript">
+            
+Elm.Main = function(elm){
+  var N = Elm.Native, _N = N.Utils(elm), _L = N.List(elm), _E = N.Error(elm), _J = N.JavaScript(elm), _str = _J.toString, $moduleName = 'Main';
+  var Text = Elm.Text(elm);
+  var Text = Elm.Text(elm);
+  var Basics = Elm.Basics(elm);
+  var Signal = Elm.Signal(elm);
+  var List = Elm.List(elm);
+  var Maybe = Elm.Maybe(elm);
+  var Time = Elm.Time(elm);
+  var Prelude = Elm.Prelude(elm);
+  var Graphics = Graphics || {};
+  Graphics.Element = Elm.Graphics.Element(elm);
+  var Color = Elm.Color(elm);
+  var Graphics = Graphics || {};
+  Graphics.Collage = Elm.Graphics.Collage(elm);
+  var _op = {};
+  var pSym = F2(function(sym, inp){
+    return function(){
+      switch (inp.ctor) {
+        case '::':
+          return (_N.eq(inp._0,sym) ? _J.toList([{ctor:"_Tuple2", _0:inp._0, _1:inp._1}]) : (Basics.otherwise ? _J.toList([]) : _E.If($moduleName,'between lines 7 and 8')));
+      }
+      return _J.toList([]);}();});
+  var testpSym = Text.asText(A2(pSym, 'i', _str('ihello')));
+  var pReturn = F2(function(a, inp){
+    return _J.toList([{ctor:"_Tuple2", _0:a, _1:inp}]);});
+  var testpReturn = Text.asText(A2(pReturn, 4, _str('ihello')));
+  var pFail = function(inp){
+    return _J.toList([]);};
+  var testpFail = Text.asText(pFail(_str('failtest!!')));
+  var main = testpFail;
+  return elm.Main = {
+    _op : _op, 
+    pSym : pSym, 
+    pReturn : pReturn, 
+    pFail : pFail, 
+    testpSym : testpSym, 
+    testpReturn : testpReturn, 
+    testpFail : testpFail, 
+    main : main};};
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            Elm.fullscreen(Elm.Main)
+        </script>
+        <noscript>
+            
+        </noscript>
+    </body>
+</html>

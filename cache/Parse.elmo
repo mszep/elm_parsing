@@ -1,0 +1,22 @@
+
+Elm.Parse = function(elm){
+  var N = Elm.Native, _N = N.Utils(elm), _L = N.List(elm), _E = N.Error(elm), _J = N.JavaScript(elm), _str = _J.toString, $moduleName = 'Parse';
+  var Text = Elm.Text(elm);
+  var Text = Elm.Text(elm);
+  var Basics = Elm.Basics(elm);
+  var Signal = Elm.Signal(elm);
+  var List = Elm.List(elm);
+  var Maybe = Elm.Maybe(elm);
+  var Time = Elm.Time(elm);
+  var Prelude = Elm.Prelude(elm);
+  var Graphics = Graphics || {};
+  Graphics.Element = Elm.Graphics.Element(elm);
+  var Color = Elm.Color(elm);
+  var Graphics = Graphics || {};
+  Graphics.Collage = Elm.Graphics.Collage(elm);
+  var _op = {};
+  var parse = function(x){
+    return (x*x);};
+  return elm.Parse = {
+    _op : _op, 
+    parse : parse};};
